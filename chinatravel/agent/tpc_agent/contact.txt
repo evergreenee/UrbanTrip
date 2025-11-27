@@ -1,0 +1,3 @@
+name: Yicheng Tang
+email: tyc040107@qq.com
+institutional affiliation: Beijing Institute of Technology

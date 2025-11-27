@@ -1,0 +1,61 @@
+__pycache__/
+run_exp.sh
+eval_exp.sh
+cache/
+results/
+eval_res/
+debug.sh
+eval_1000.sh
+human150.sh
+results.md
+your_tpc_scores.json
+env.tar.gz
+fig.py
+nul
+phase1_time.png
+phase2_time.png
+test_insertion_fix.py
+
+# ============================
+# 1. Python & 系统通用忽略规则 (建议保留)
+# ============================
+__pycache__/
+*.py[cod]
+*.so
+.DS_Store
+
+# IDE 和 编辑器配置
+.idea/
+.claude/
+
+# ============================
+# 2. 运行时产生的临时文件/数据 (根据您的目录树建议忽略)
+# ============================
+# 如果您不想提交缓存、日志和结果数据，请保留这些行
+cache/
+logs/
+runtime_logs/
+results/
+eval_res/
+images/
+visualizations/
+
+# ============================
+# 3. 核心逻辑: chinatravel Agent 过滤
+# ============================
+
+# 第一步：忽略 chinatravel/agent 下的所有内容
+chinatravel/agent/*
+
+# 第二步：使用 ! 重新包含(白名单) 您需要的 tpc_agent 文件夹
+!chinatravel/agent/tpc_agent/
+
+# 第三步：保留 agent 目录下的 __init__.py (如果是 Python 包结构，这很重要)
+!chinatravel/agent/__init__.py
+
+# ============================
+# 4. 其他 chinatravel 内部可能需要忽略的大型数据 (可选)
+# ============================
+# 如果 data 和 environment 文件夹包含大数据集，建议取消注释以下行：
+# chinatravel/data/
+# chinatravel/environment/database/
